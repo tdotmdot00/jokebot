@@ -2,9 +2,9 @@ const SlackBot = require('slackbots');
 const axios = require('axios');
 
 const bot = new SlackBot({
-  token: 'xoxb-927090021283-967021720791-4wRLDnA262g4WRPBYWO6uFlw',
-  name: 'jokebot'
-});
+    token: `${process.env.BOT_TOKEN}`,
+    name: 'jokebot'
+})
 
 // Start Handler
 bot.on('start', () => {
